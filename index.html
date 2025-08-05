@@ -1,18 +1,142 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>UMIS-University Management System</title>
-        <style>
-            
-        </style>
 
-    </head>
-    <body>
-        <img src="img/UMISlogo.png"style="justify-content: center; align-items: center; display: block; margin: 0 auto;"> 
-        <div class="container">
+<head>
+    <title>UMIS-University Management System</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px 20px;
+            background: none;
+        }
+        .icon-row {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo-img {
+            display: block;
+            margin: 0 auto 20px auto;
+            max-width: 200px;
+            width: 100%;
+        }
+        .icon-but {
+            width: 100px;
+            height: 120px;
+            background: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            margin: 10px;
+            transition: box-shadow 0.2s;
+        }
+        .icon-but:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        .icon-but img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-bottom: 8px;
+        }
+        .icon-but h3 {
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            font-size: 13px;
+            margin: 0;
+            line-height: 1.2;
+        }
+        .icon-but a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <img src="img/UMISlogo.png" class="logo-img" alt="UMIS Logo">
+        <div class="icon-row">
             <div class="icon-but">
-                <a href="GI.html"><img src=""></a>
+                <a href="GI.html">
+                    <img src="icon/content_paste_search_24dp_E3E3E3.png" alt="General Information">
+                    <h3>General<br>Information</h3>
+                </a>
+            </div>
+            <div class="icon-but">
+                <a href="CI.html">
+                    <img src="icon/contact_page_24dp_E3E3E3.png" alt="Contanct Information">
+                    <h3>Contact<br>Information</h3>
+                </a>
+            </div>
+            <div class="icon-but">
+                <a href="AI.html">
+                    <img src="icon/school_24dp_E3E3E3.png" alt="Acadamic Information">
+                    <h3>General<br>Information</h3>
+                </a>
+            </div>
+            <div class="icon-but">
+                <a href="FI.html">
+                    <img src="icon/family_restroom_24dp_E3E3E3.png" alt="Family Information">
+                    <h3>Family<br>Information</h3>
+                </a>
             </div>
         </div>
-    </body>
+        <div class="icon-row">
+            <div class="icon-but">
+                <a href="AC.html">
+                    <img src="icon/account_balance_24dp_E3E3E3.png" alt="Account Details">
+                    <h3>Account<br>Information</h3>
+                </a>
+            </div>
+            <div class="icon-but">
+                <a href="GI.html">
+                    <img src="icon/school_24dp_E3E3E3.png" alt="Acadamic Information">
+                    <h3>Grievance<br>Redressal</h3>
+                </a>
+            </div>
+            <div class="icon-but">
+                <a href="EI.html">
+                    <img src="icon/assignment_24dp_E3E3E3.png" alt="Acadamic Information">
+                    <h3>General<br>Information</h3>
+                </a>
+            </div>
+            <div class="icon-but">
+                <a href="SI.html">
+                    <img src="icon/currency_rupee_24dp_E3E3E3.png" alt="Acadamic Information">
+                    <h3>Scholarship<br>Information</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
 </html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>UMIS-University Management System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+<style>
+  body{
+    background-color:#F5F5F5;
+  }
+  img {
+    border-radius: 80%;
+    width: 50px;
+    height: 50px;
+    fill: white;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  .btn.btn-primary {
+    background-color: white;
+    border-bottom: white;
+  }
+  .btn.btn-primary {
+    border-radius: 50%;
+    border-color: white;
+  }
+  .tab h5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px 20px 0 0;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: bold;
+    color: cornflowerblue;
+    background: none;
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  .card-header img {
+    text-align: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .card-header button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+<body>
+  <div class="card">
+  <div class="card-header">
+    <img src="img/gov.jpeg">
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+      aria-controls="offcanvasExample"><img src="img/nav.png"></button>
+    <h5>M.KUMARASAMY COLLEGE OF ENGINEERING</h5>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+          etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

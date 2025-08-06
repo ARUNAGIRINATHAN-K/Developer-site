@@ -251,3 +251,13 @@
         line-height: 1;
     }
     
+    .navbar.navbar-expand-sm.bg-dark.navbar-dark {
+            background-color:white;
+            border-radius: 30px;
+        }
+        .navbar.navbar-expand-sm.bg-dark.navbar-dark img {
+            border-radius: 50%;
+            margin-right: 30px;
+        }
+
+    

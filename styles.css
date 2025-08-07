@@ -259,5 +259,110 @@
             border-radius: 50%;
             margin-right: 30px;
         }
+        body {
+    background-color: #F5F5F5;
+  }
+
+  img {
+    border-radius: 80%;
+    width: 50px;
+    height: 50px;
+    fill: white;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+
+  .btn.btn-primary {
+    background-color: white;
+    border-bottom: white;
+  }
+
+  .btn.btn-primary {
+    border-radius: 50%;
+    border-color: white;
+  }
+
+  .tab h5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px 20px 0 0;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: bold;
+    color: cornflowerblue;
+    background: none;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .card-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 70%;
+  }
+
+  .btn.btn-primary button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 70%;
+  }
+
+  .btn-group {
+    background-color: blue;
+  }
+
+  .btn-group a {
+    color: blue;
+    text-decoration: none;
+    padding: 10px 20px;
+
+  }
+
+  .offcanvas-body button {
+    background-color: blue;
+    color: white;
+  }
+
+  .btn.btn-primar {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .btn.btn-prima {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  form {
+    inline-size: 600px;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0;
+  }
 
     

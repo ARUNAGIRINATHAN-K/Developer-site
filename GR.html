@@ -56,8 +56,7 @@
     border-bottom: 1px solid #ddd;
   }
 
-  .btn.btn-primary img {
-    text-align: left;
+  .card-header img {
     width: 50px;
     height: 50px;
     border-radius: 70%;
@@ -69,14 +68,52 @@
     cursor: pointer;
     border-radius: 70%;
   }
-  .btn-group{
+
+  .btn-group {
     background-color: blue;
   }
-  .btn-group a{
-    color : blue;
+
+  .btn-group a {
+    color: blue;
     text-decoration: none;
     padding: 10px 20px;
-    
+
+  }
+
+  .offcanvas-body button {
+    background-color: blue;
+    color: white;
+  }
+
+  .btn.btn-primar {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .btn.btn-prima {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  form {
+    inline-size: 600px;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0;
   }
 </style>
 
@@ -91,16 +128,115 @@
         aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasExampleLabel">UMIS</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <hr>
         <div class="offcanvas-body">
-          <div class="btn-group">
-            <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
-          </div>
+          <button type="button" class="btn btn-primar"><strong>Grievance</strong></button>
         </div>
       </div>
     </div>
   </div>
+  <div class="container mt-4">
+    <h2>Institute Details</h2>
+    <div class="card p-3 mb-4">
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">University Type</label>
+          <input type="text" class="form-control" value="State Public University" disabled>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">University</label>
+          <input type="text" class="form-control" value="ANNA UNIVERSITY" disabled>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label class="form-label">Institute Type</label>
+          <input type="text" class="form-control" value="Affiliated Autonomous College" disabled>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Institute Category</label>
+          <input type="text" class="form-control" value="Engineering" disabled>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Institute Ownership</label>
+          <input type="text" class="form-control" value="Private Un Aided" disabled>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <label class="form-label">Institute Name</label>
+          <input type="text" class="form-control" value="M.KUMARASAMY COLLEGE OF ENGINEERING" disabled>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">District</label>
+          <input type="text" class="form-control" value="Karur" disabled>
+        </div>
+      </div>
+    </div>
+    <h2>Register Grievance</h2>
+    <div class="card p-3">
+      <div class="d-flex justify-content-end mb-3">
+        <button class="btn btn-prima" id="liveToastBtn">View Grievance Status</button>
+      </div>
+      <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+      <form>
+        <div class="row" >
+          <div class="mb-3">
+          <label class="form-label">Grievance Category</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="category" id="student" value="Student" checked>
+            <label class="form-check-label" for="student">Student</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="category" id="portal" value="Portal">
+            <label class="form-check-label" for="portal">Portal</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">UMIS - ID</label>
+          <input type="text" class="form-control" value="123654" disabled>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Grievance Type</label>
+          <select class="form-select" required>
+            <option selected>Select an Grievance type</option>
+            <option value="1">Aadhara and Bank Account not mapped</option>
+            <option value="2">Passport Id Mismatch / Already associated other Student</option>
+            <option value="3">Asdhar Id Mismatch / Already associated other Student</option>
+            <option value="3">community / Caste Mismatch</option>
+            <option value="3">First Graduate detail Mismatch</option>
+            <option value="3">Course / Course Batch Mismatch</option>
+            <option value="3">DOB Mismatch</option>
+            <option value="3">EMIS Id Mismatch / Already associated other Student</option>
+            <option value="3">Gender Mismatch</option>
+            <option value="3">Income Mismatch</option>
+            <option value="3">Incorrect Course Year</option>
+            <option value="3">Quota Mismatch</option>
+            <option value="3">Student name Mismatch</option>
+            <option value="3">Appeal Issue</option>
+            <option value="3">Course Completion wrongly Updated</option>
+            <option value="3">Data Issue - Application Id nor Generated</option>
+            <option value="3">Data Issue - School Acadamic Year Mismatch</option>
+            <option value="3">Data Issue - School Details Mismatch</option>
+            <option value="3">Data Mismatch in ssp</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Description</label>
+          <textarea class="form-control" rows="4" placeholder="Enter your description"></textarea>
+      </form>
 </body>
-
 </html>

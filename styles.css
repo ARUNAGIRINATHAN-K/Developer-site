@@ -421,4 +421,11 @@
         width: 400px;
         margin: 20px auto;
         border: 1px solid #ddd;
-    } 
+    }
+    .card.mb-3 {
+            width: 900px;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        } 

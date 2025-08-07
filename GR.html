@@ -10,9 +10,10 @@
     crossorigin="anonymous"></script>
 </head>
 <style>
-  body{
-    background-color:#F5F5F5;
+  body {
+    background-color: #F5F5F5;
   }
+
   img {
     border-radius: 80%;
     width: 50px;
@@ -21,14 +22,17 @@
     margin-top: 5px;
     margin-left: 10px;
   }
+
   .btn.btn-primary {
     background-color: white;
     border-bottom: white;
   }
+
   .btn.btn-primary {
     border-radius: 50%;
     border-color: white;
   }
+
   .tab h5 {
     position: absolute;
     top: 0;
@@ -41,6 +45,7 @@
     color: cornflowerblue;
     background: none;
   }
+
   .card-header {
     display: flex;
     justify-content: space-between;
@@ -50,49 +55,52 @@
     background-color: white;
     border-bottom: 1px solid #ddd;
   }
-  .card-header img {
+
+  .btn.btn-primary img {
     text-align: left;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 70%;
   }
-  .card-header button{
+
+  .btn.btn-primary button {
     background-color: white;
     border: none;
     cursor: pointer;
+    border-radius: 70%;
+  }
+  .btn-group{
+    background-color: blue;
+  }
+  .btn-group a{
+    color : blue;
+    text-decoration: none;
+    padding: 10px 20px;
+    
   }
 </style>
+
 <body>
   <div class="card">
-  <div class="card-header">
-    <img src="img/gov.jpeg">
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-      aria-controls="offcanvasExample"><img src="img/nav.png"></button>
-    <h5>M.KUMARASAMY COLLEGE OF ENGINEERING</h5>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div>
-          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
-          etc.
+    <div class="card-header">
+      <img src="img/gov.jpeg">
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"><img src="img/nav.png"></button>
+      <h5>M.KUMARASAMY COLLEGE OF ENGINEERING</h5>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">UMIS</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="dropdown mt-3">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-            data-bs-toggle="dropdown">
-            Dropdown button
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+        <div class="offcanvas-body">
+          <div class="btn-group">
+            <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
 </body>
+
 </html>

@@ -403,4 +403,22 @@
     }
     .card3:hover {
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .container.pt-5 {
+        height: 390px;
+        width: 900px;
+    }
+
+    .card-header {
+        text-align: left;
+    }
+
+    .card1 {
+        height: 1000px;
+    }
+
+    .card {
+        width: 400px;
+        margin: 20px auto;
+        border: 1px solid #ddd;
     } 

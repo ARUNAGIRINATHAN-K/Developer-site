@@ -364,5 +364,43 @@
     border-radius: 10px;
     margin: 0;
   }
+  h2 {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        color: cornflowerblue;
+    }
+    .card-header{
+        text-align: center;
+    }
+    .card-body {
+        text-align: center;
+    }
 
-    
+    .card-header h4 {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        color: black;
+    }
+    .card3{
+        width: 1300px;
+    }
+
+    .card {
+        width: 220px;
+        margin-left: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card:hover{
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .card3 {
+        width: 185px;
+        height: 100px;
+        margin-left: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card3:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    } 

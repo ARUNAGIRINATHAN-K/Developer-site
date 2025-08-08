@@ -1,79 +1,100 @@
 <head>
     <title>UMIS-University Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        function showToast() {
+            var toastEl = document.getElementById('submitToast');
+            var toast = new bootstrap.Toast(toastEl);
+            toast.show();
+            setTimeout(function() {
+                window.location.href = 'index.html';
+            }, 2000);
+        }
+    </script>
+    <style>
+        body {
+            background-color: white;
+        }
 
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 12px 16px;
+        }
+
+        a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .previous {
+            background-color: white;
+            color: blue;
+        }
+
+        .round {
+            border-radius: 50%;
+        }
+
+        .info {
+            text-align: left;
+            padding-left: 5px;
+            display: inline-block;
+        }
+
+        .info h4,
+        .info h5 {
+            margin-top: 2px;
+            margin-bottom: 2px;
+            margin-left: 15px;
+            line-height: 1.1;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: cornflowerblue;
+        }
+
+        .container.pt-5 {
+            height: 390px;
+            width: 900px;
+        }
+
+        .card-header {
+            text-align: left;
+        }
+
+        .card1 {
+            height: 1000px;
+        }
+
+        .card {
+            width: 400px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .toast-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1050;
+        }
+    </style>
 </head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-<style>
-    body {
-        background-color: white;
-    }
-
-    a {
-        text-decoration: none;
-        display: inline-block;
-        padding: 12px 16px;
-    }
-
-    a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-
-    .previous {
-        background-color: white;
-        color: blue;
-    }
-
-    .round {
-        border-radius: 50%;
-    }
-
-    .info {
-        text-align: left;
-        padding-left: 5px;
-        display: inline-block;
-    }
-
-    .info h4,
-    .info h5 {
-        margin-top: 2px;
-        margin-bottom: 2px;
-        margin-left: 15px;
-        line-height: 1.1;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-    }
-
-    h2 {
-        font-family: 'Times New Roman', Times, serif;
-        text-align: center;
-        color: cornflowerblue;
-    }
-
-    .container.pt-5 {
-        height: 390px;
-        width: 900px;
-    }
-
-    .card-header {
-        text-align: left;
-    }
-
-    .card1 {
-        height: 1000px;
-    }
-
-    .card {
-        width: 400px;
-        margin: 20px auto;
-        border: 1px solid #ddd;
-    }
-</style>
-
 <body>
     <div class="info">
         <a href="index.html" class="previous round">&#8249;</a>
@@ -119,7 +140,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header">Communnity Certificate</div>
+                        <div class="card-header">Community Certificate</div>
                         <div class="card-body">
                             <input type="text" class="form-control" id="validationCustom01" required>
                         </div>
@@ -162,5 +183,40 @@
                 </div>
             </div>
         </div>
-    </div><br>
+    </div><br><br>
+    <div class="container">
+        <div class="header">First Graduate Certificate</div>
+        <div class="body">
+            <h5>Is the student first graduate in the Family</h5>
+            <div class="col-md-6">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">Yes
+                    <label class="form-check-label" for="radio1"></label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">No
+                    <label class="form-check-label" for="radio2"></label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Not Applicable
+                    <label class="form-check-label"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button type="button" class="btn btn-primary" onclick="showToast()">Submit</button>
+    </div>
+    <div class="toast-container">
+        <div class="toast" id="submitToast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Notification</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Form submitted successfully!
+            </div>
+        </div>
+    </div>
+    
 </body>

@@ -429,3 +429,35 @@
             border-radius: 5px;
             border: 1px solid #ccc;
         } 
+    
+        .container.pt-5 {
+            height: 390px;
+            width: 900px;
+        }
+
+        .card-header {
+            text-align: left;
+        }
+
+        .card1 {
+            height: 1000px;
+        }
+
+        .card {
+            width: 400px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .toast-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1050;
+        }
